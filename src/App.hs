@@ -3,11 +3,9 @@
 module App (main) where
 
 import Data.Maybe
+import System.Environment (lookupEnv)
 import Text.Read (readMaybe)
 import qualified Web.Scotty as Scotty
-import Lucid.Html5
-import Lucid
-import System.Environment (lookupEnv)
 
 --------------------------------------------------
 
@@ -16,12 +14,7 @@ import System.Environment (lookupEnv)
 --------------------------------------------------
 
 renderHomeH :: Scotty.ActionM ()
-renderHomeH = do
-  Scotty.html . renderText $
-    html_ $
-      body_ $ do
-        h1_ "Title"
-        p_ "Hello World, dockerfile!"
+renderHomeH = Scotty.html "Hello heroku in Haskell!"
 
 --------------------------------------------------
 

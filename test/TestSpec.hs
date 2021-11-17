@@ -3,7 +3,6 @@
 -- |
 module TestSpec where
 
-import qualified Data.Text as T
 import Test.Hspec hiding (pending)
 
 spec :: Spec
