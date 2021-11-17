@@ -14,3 +14,4 @@ Hello Heroku!
 1. Multiple Stage Dockerfile
    a. See 2 `FROM` in the `Dockerfile`
    b. The goal is to create much smaller image for running in production
+1. Changes to cabal file and stack yaml will cause full build (rebuild from scratch), which is terrible.
