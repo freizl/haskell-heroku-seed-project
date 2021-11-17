@@ -10,4 +10,7 @@ Hello Heroku!
 
 ## Notes
 
-This seed project uses stack as build tool and scotty web framework to demo creating a webapp. Both can be easily swapped by other tools (e.g. cabal and servant respectively.)
+1. This seed project uses stack as build tool and scotty web framework to demo creating a webapp. Both can be easily swapped by other tools (e.g. cabal and servant respectively.)
+1. Multiple Stage Dockerfile
+   a. See 2 `FROM` in the `Dockerfile`
+   b. The goal is to create much smaller image for running in production
